@@ -70,7 +70,7 @@
     <table class="table table-hover">
         <thead>
           <tr>
-            <th>#</th>
+            <th id="msg_id">#</th>
             <th id="name">姓名</th>
             <th id="content">留言訊息</th>
             <th id="time">留言時間</th>

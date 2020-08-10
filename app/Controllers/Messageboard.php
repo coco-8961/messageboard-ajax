@@ -7,9 +7,7 @@ class Messageboard extends BaseController
 {
 
 	public function index()
-	{
-		$MessageModel = new MessageModel();
-        $data['messages'] = $MessageModel->findAll();   
+	{ 
 		return view('messageboard/index');
 	}
 	public function get()
@@ -22,7 +20,6 @@ class Messageboard extends BaseController
     {
         $MessageModel = new MessageModel();
         $MessageModel->insert($_POST);
-
     }
 
     public function delete($id)
